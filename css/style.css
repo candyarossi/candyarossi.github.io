@@ -1,0 +1,282 @@
+/*
+
+oscuro: #000
+fondo: #110022
+acento: #8844FF
+hover: #00FFBB
+
+*/
+
+
+/* ---- reset ---- */ 
+
+body{ 
+	margin:0; 
+	font:normal 75% Arial, Helvetica, sans-serif; 
+	color: #00ffbb;
+} 
+
+canvas{ 
+	display: block; 
+	vertical-align: bottom; 
+} 
+
+/* ---- particles.js container ---- */ 
+
+#particles-js{ 
+	position:absolute; 
+	z-index: -1;
+	width: 100%; 
+	height: 100%; 
+	background-color: #110022; 
+	background-image: url(""); 
+	background-repeat: no-repeat; 
+	background-size: cover; 
+	background-position: 50% 50%; 
+        background-attachment: fixed;
+} 
+
+/* ---- stats.js ---- */
+
+.count-particles{ 
+	background: #000022; 
+	position: absolute; 
+	top: 48px; 
+	left: 0; 
+	width: 80px; 
+	color: #13E8E9; 
+	font-size: .8em; 
+	text-align: left; 
+	text-indent: 4px; 
+	line-height: 14px; 
+	padding-bottom: 2px; 
+	font-family: Helvetica, Arial, sans-serif; 
+	font-weight: bold; 
+}
+ 
+.js-count-particles{ 
+	font-size: 1.1em; 
+} 
+
+#stats, .count-particles{ 
+	-webkit-user-select: none; 
+	margin-top: 5px; 
+	margin-left: 5px; 
+} 
+
+#stats{ 
+	border-radius: 3px 3px 0 0; 
+	overflow: hidden; 
+} 
+
+.count-particles{ 
+	border-radius: 0 0 3px 3px; 
+}
+
+
+/* ---- MY STYLE ---- */
+
+
+.uk-navbar-nav>li>a{
+	color: #8844FF;
+}
+
+.uk-navbar-nav>li>a:hover{
+	transition: none !important;
+	color: #00FFBB;
+}
+
+.uk-navbar-nav>li>a:focus{
+	transition: none !important;
+	color: #00FFBB;
+}
+
+.uk-navbar-dropdown-nav>li>a{
+	text-transform: uppercase;
+	color: #8844FF;
+}
+
+.uk-navbar-dropdown-nav>li>a:hover{
+	transition: none !important;
+	color: #00FFBB;
+}
+
+.uk-navbar-dropdown-nav>li>a:focus{
+	transition: none !important;
+	color: #00FFBB;
+}
+
+.uk-navbar-toggle{
+	color: white;
+}
+
+.uk-navbar-toggle:hover{
+	transition: none !important;
+	color: #00FFBB;
+}
+
+.uk-navbar-toggle:focus{
+	transition: none !important;
+	color: #00FFBB;
+}
+
+.uk-nav-divider{
+	opacity: 0.1;
+}
+
+.uk-padding-large{
+	padding: 2.5em;
+}
+
+.uk-navbar-color{
+	background-color: rgba(0,0,0,0.4) !important;
+}
+
+.st0{
+	fill: #8844FF;
+}
+
+.st0:hover{
+	fill: #00FFBB;
+}
+
+.uk-navbar-dropdown{
+	background-color:  rgba(0,0,0,1);
+}
+
+.uk-footer-color{
+	background-color: rgba(0,0,0,0.4) !important;
+}
+
+.textoColorPrimario{
+	color: #8844FF !important;
+}
+
+.textoColorSecundario{
+	color: #00FFBB !important;
+}
+
+.divFooter{
+	margin-left: -15px !important;
+	margin-top: 10px;
+}
+
+.redes{
+	color: #8844FF !important;
+}
+
+.redes:hover{
+	color: #00FFBB !important;
+}
+
+.uk-card-default{
+	background-color: rgba(0,0,0,0.4) !important;
+	border-top-right-radius: 5% 25%;
+	border-bottom-left-radius: 5% 25%;
+	color: #00FFBB;
+	min-height: 200px;
+}
+
+.tamañoLista{
+	font-size: 18px;
+	line-height: 35px;
+}
+
+.enlacesLista{
+	text-decoration: none;
+	color: #8844FF !important;
+}
+
+.enlacesLista:hover{
+	text-decoration: none;
+	color: #00FFBB !important;
+}
+
+.modal{
+	background-color: #110022;
+}
+
+p{
+	font-size: 15px;
+}
+
+
+/* ---- Anim titulo ---- */
+
+
+.textoAnim h1{ 
+	position: relative; 
+	float: left;
+	background: transparent;
+	color: #00FFBB;
+	font-family: monospace; 
+}
+
+.textoAnim span {
+    position:absolute;
+    right:0;
+    width:0;
+	background: transparent;
+    border-left: 1px solid #8844FF;
+    animation: escribir 3s steps(24) infinite alternate;
+}
+
+@keyframes escribir {
+    from { width: 100% }
+    to { width:0 }
+}
+
+
+/* ---- MEDIA QUERIES ---- */
+
+
+@media screen and (max-width:1920px){
+    .menuSecundario{
+		display: none;
+	}
+	.menuPrincipal{
+		display: block;
+	}
+}
+
+@media screen and (max-width:1024px){
+    .menuSecundario{
+		display: block;
+	}
+	.menuPrincipal{
+		display: none;
+	}
+}
+
+@media screen and (max-width:780px){
+   .menuPrincipal{
+	   display: none;
+   }
+   .menuSecundario{
+	display: block;
+	}
+}
+
+@media screen and (max-width:640px){
+    .menuPrincipal{
+		display: none;
+	}
+	.menuSecundario{
+		display: block;
+	}
+	#logo-footer{
+		display: none;
+	}
+}
+
+@media screen and (max-width:360px){
+    .menuPrincipal{
+		display: none;
+	}
+	.menuSecundario{
+		display: block;
+	}
+	#logo-footer{
+		display: none;
+	}
+}
